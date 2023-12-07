@@ -80,6 +80,8 @@ form {
   flex-direction: column;
   gap: 0.5rem;
   align-items: start;
+  /* padding-right: 2rem;
+  background-color: #2ec4b6; */
 }
 
 .half-boxes {
@@ -96,12 +98,35 @@ input,
 select {
   width: 100%;
   height: auto;
-  padding: 0.8rem 2rem 0.8rem 1rem;
+  padding: 0.8rem 1rem 0.8rem 0.5rem;
   border: 1px solid #f0f0f0;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 25px;
 }
 
 input::placeholder {
-  color: #e3e3e3;
+  color: #c2c2c2;
+}
+
+.input-box.password,
+.input-box.gender,
+.input-box.activity {
+  position: relative;
+}
+
+span {
+  padding-right: 0.8rem;
+  color: #c2c2c2;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translateY(-60%);
 }
 
 .btn-box {
